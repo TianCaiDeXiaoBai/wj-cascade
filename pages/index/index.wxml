@@ -1,0 +1,105 @@
+<view class="container">
+  <view class="form">
+    <view class="form-cell align-items bb" bindtap="onPop" data-show="regionShow">
+      <text>所在城市</text>
+      <input class="ml20 flex-1" placeholder="请选择" value="{{areaStr}}" disabled />
+      <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
+    </view>
+    <view class="form-cell align-items" bindtap="onPop" data-show="regionShow2">
+      <text>需求区域</text>
+      <input class="ml20 flex-1" placeholder="请选择" value="{{areaStr2}}" disabled />
+      <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="tips">
+    <view class="card">
+      <view class="card-label">介绍</view>
+      <view class="introduce">
+        支持数据自定义，可以自定义数据的key、子节点的key。如果区域可以选择【全部、不限】等不确定地区，需要传allStr参数，默认是值是 '不限'，若无不确定地区，则可以忽略。
+      </view>
+    </view>
+    <!-- <view class="tips-title mt30">API</view> -->
+    <view class="card props mt30">
+      <view class="card-label">Props</view>
+      <view class="cell align-items th">
+        <text>参数</text>
+        <text>说明</text>
+        <text>类型</text>
+        <text>默认值</text>
+      </view>
+      <view class="cell align-items">
+        <text>title</text>
+        <text>标题</text>
+        <text>String</text>
+        <text>区域选择</text>
+      </view>
+      <view class="cell align-items">
+        <text>areaList</text>
+        <text>区域数据</text>
+        <text>Arrary</text>
+        <text>此demo路径/utils/areaList.js</text>
+      </view>
+      <view class="cell align-items">
+        <text>region</text>
+        <text>默认回显的区域值（安徽省/合肥市）</text>
+        <text>String</text>
+        <text>''</text>
+      </view>
+      <view class="cell align-items">
+        <text>labelKey</text>
+        <text>区域数据的对象的key</text>
+        <text>String</text>
+        <text>label</text>
+      </view>
+      <view class="cell align-items">
+        <text>childrenKey</text>
+        <text>区域数据的子节点key</text>
+        <text>String</text>
+        <text>children</text>
+      </view>
+      <view class="cell align-items">
+        <text>allStr</text>
+        <text>不确定节点的文字</text>
+        <text>String</text>
+        <text>不限</text>
+      </view>
+      <view class="cell align-items">
+        <text>level</text>
+        <text>区域数据层级</text>
+        <text>Number</text>
+        <text>2</text>
+      </view>
+    </view>
+
+    <view class="card events mt30">
+      <view class="card-label">Events</view>
+      <view class="cell th align-items">
+        <text>事件名</text>
+        <text>说明</text>
+        <text>回调参数</text>
+      </view>
+      <view class="cell align-items">
+        <text>areachange</text>
+        <text>区域选择改变时的回调</text>
+        <text>event</text>
+      </view>
+      <view class="cell align-items">
+        <text>onClose</text>
+        <text>需要关闭弹框时的回调</text>
+        <text>-</text>
+      </view>
+    </view>
+  </view>
+  <view class="modal modal-bottom  {{regionShow ? 'show':''}}">
+    <view class="pop-box round">
+      <region areaList="{{areaList}}" bindareachange="onAreaChange" region="{{region}}" labelKey="name"
+        childrenKey="children" bindclose="onClose" level="2" title="所在城市"></region>
+    </view>
+  </view>
+
+  <view class="modal modal-bottom  {{regionShow2 ? 'show':''}}">
+    <view class="pop-box round">
+      <region areaList="{{areaList2}}" bindareachange="onAreaChange2" region="{{region2}}" title="需求区域" bindclose="onClose" level="2"></region>
+    </view>
+  </view>
+</view>

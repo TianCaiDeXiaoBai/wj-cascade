@@ -1,0 +1,111 @@
+/* pages/index/index.wxss */
+@import "../../wjui/wj.wxss";
+
+.container {
+  height: 100vh;
+  background-color: rgb(247, 247, 250);
+  padding: 32rpx 0;
+}
+
+.form {
+  padding: 32rpx;
+  background-color: #FFF;
+}
+
+.round {
+  border-radius: 24rpx 24rpx 0 0 !important;
+}
+
+.form-cell {
+  background-color: #FFF;
+  padding: 24rpx 0;
+}
+
+.form-cell input {
+  /* border: 1rpx solid #f0f2f5; */
+  text-align: right;
+  font-size: 28rpx;
+}
+
+.form-cell text {
+  font-size: 28rpx;
+  font-weight: 400;
+  text-align: left;
+  color: #1f2531;
+}
+
+.arrow {
+  width: 14rpx;
+  height: 24rpx;
+}
+
+.tips {
+  padding: 32rpx;
+}
+.tips-title {
+  font-size: 36rpx;
+}
+.card {
+  padding: 32rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 16rpx 24rpx #ebedf0;
+}
+
+.card-label {
+  margin-bottom: 32rpx;
+  font-weight: 600;
+  font-size: 32rpx;
+}
+
+.cell {
+  border-bottom: 2rpx solid rgba(240,242,245,0.6);
+  font-size: 24rpx;
+  padding: 16rpx 0;
+}
+.cell text {
+  padding: 0 10rpx;
+  word-wrap: break-word;
+}
+.props .cell text:nth-child(1) {
+  width: 25%;
+}
+
+
+.props .cell text:nth-child(2) {
+  width: 40%;
+}
+
+.props .cell text:nth-child(3) {
+  width: 15%;
+}
+
+.props .cell text:nth-child(4) {
+  width: 20%;
+}
+
+
+.events .cell text:nth-child(1) {
+  width: 25%;
+}
+
+
+.events .cell text:nth-child(2) {
+  width: 50%;
+}
+
+.events .cell text:nth-child(3) {
+  width: 25%;
+}
+
+
+.cell.th text {
+  font-weight: bold;
+}
+
+.introduce {
+  font-size: 28rpx;
+  font-weight: 400;
+  text-align: left;
+  color: #1f2531;
+}

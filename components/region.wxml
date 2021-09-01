@@ -1,0 +1,35 @@
+<!--components/region.wxml-->
+<view class="region-pannel" catchtouchmove>
+  <view class="pop-title">{{title}}</view>
+  <view class="pop-close" bindtap="onClose">
+    <view class="image">
+    </view>
+  </view>
+
+  <view class="tabs align-items">
+    <view class="tab {{active == index ? 'active' : ''}}" wx:for="{{area}}" bindtap="onTabChange" data-idx="{{index}}">
+      <text>{{item[labelKey]}}</text>
+    </view>
+  </view>
+  <view class="picker-pannel" style="left: -{{(active)*750}}rpx;">
+    <scroll-view scroll-y>
+      <view class="picker-item {{area.length > 0 && item[labelKey] == area[0][labelKey] ? 'active' : '' }}"
+        wx:for="{{areaList}}" bindtap="onAreaChange" data-idx="{{'0'}}" data-item="{{item}}">
+        {{item[labelKey]}}</view>
+    </scroll-view>
+
+    <scroll-view scroll-y>
+      <view class="picker-item {{area.length > 1 && item[labelKey] == area[1][labelKey] ? 'active' : '' }}"
+        wx:for="{{area[0][childrenKey]}}" data-idx="{{'1'}}" bindtap="onAreaChange" data-item="{{item}}">
+        {{item[labelKey]}}</view>
+    </scroll-view>
+
+    <scroll-view scroll-y>
+      <view class="picker-item {{area.length > 2 && item[labelKey] == area[2][labelKey] ? 'active' : '' }}"
+        wx:for="{{area[1][childrenKey]}}" data-idx="{{'2'}}" bindtap="onAreaChange" data-item="{{item}}">
+        {{item[labelKey]}}</view>
+    </scroll-view>
+
+  </view>
+
+</view>

@@ -15,7 +15,8 @@
     <view class="card">
       <view class="card-label">介绍</view>
       <view class="introduce">
-        支持数据自定义，可以自定义数据的key、子节点的key。如果区域可以选择【全部、不限】等不确定地区，需要传allStr参数，默认是值是 '不限'，若无不确定地区，则可以忽略。
+        <text>支持数据自定义，可以自定义数据的key、子节点的key。如果区域可以选择【全部、不限】等不确定地区，需要传allStr参数，默认是值是 '不限'，若无不确定地区，则可以忽略。</text>  
+        <view bindtap="onCopy" class="color-primary">点击复制github地址</view>  
       </view>
     </view>
     <!-- <view class="tips-title mt30">API</view> -->

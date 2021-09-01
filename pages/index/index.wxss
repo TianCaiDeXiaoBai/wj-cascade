@@ -109,3 +109,7 @@
   text-align: left;
   color: #1f2531;
 }
+
+.color-primary {
+  color: var(--color-primary);
+}

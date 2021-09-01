@@ -40,5 +40,10 @@ Page({
     this.setData({
       [show]: true
     })
+  },
+  onCopy() {
+    wx.setClipboardData({
+      data: 'https://github.com/TianCaiDeXiaoBai/wj-region',
+    })
   }
 })

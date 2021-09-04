@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "region": "../../components/cascade/index"
+    "cascader": "../../components/cascader/index"
   }
 }

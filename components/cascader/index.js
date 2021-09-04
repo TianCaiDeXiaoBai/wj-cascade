@@ -19,7 +19,7 @@ Component({
       type: String,
       value: '不限'
     },
-    region: {
+    value: {
       type: String,
       value: ''
     },
@@ -51,12 +51,11 @@ Component({
     let area = [{
       [this.data.labelKey]: '请选择'
     }]
-    let areaStr = this.data.region
+    let areaStr = this.data.value
     let areaArr = []
     let active = this.data.active
     if (areaStr) {
       area = []
-      areaStr = this.data.region
       areaArr = areaStr.split('/')
       this.data.list.forEach(province => {
         if (province[this.data.labelKey] == areaArr[0]) {
@@ -151,7 +150,8 @@ Component({
       if (regionShow == false) {
         this.onClose()
         this.triggerEvent('cascadechange', {
-          value: this.data.areaStr
+          value: this.data.areaStr,
+          items: this.data.area
         })
       }
     },

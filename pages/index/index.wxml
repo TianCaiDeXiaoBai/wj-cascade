@@ -47,7 +47,7 @@
         <text>[]</text>
       </view>
       <view class="cell align-items">
-        <text>region</text>
+        <text>value</text>
         <text>默认回显的值（安徽省/合肥市）</text>
         <text>String</text>
         <text>''</text>
@@ -99,20 +99,20 @@
   </view>
   <view class="modal modal-bottom  {{regionShow ? 'show':''}}">
     <view class="pop-box round">
-      <region list="{{areaList}}" bindcascadechange="onAreaChange" region="{{region}}" labelKey="name"
-        childrenKey="children" bindclose="onClose" level="2" title="所在城市"></region>
+      <cascader list="{{areaList}}" bindcascadechange="onAreaChange" value="{{areaStr}}" labelKey="name"
+        childrenKey="children" bindclose="onClose" level="2" title="所在城市"></cascader>
     </view>
   </view>
 
   <view class="modal modal-bottom  {{regionShow2 ? 'show':''}}">
     <view class="pop-box round">
-      <region list="{{areaList2}}" bindcascadechange="onAreaChange2" region="{{region2}}" title="需求区域" bindclose="onClose" level="2"></region>
+      <cascader list="{{areaList2}}" bindcascadechange="onAreaChange2" value="{{areaStr2}}" title="需求区域" bindclose="onClose" level="2"></cascader>
     </view>
   </view>
 
   <view class="modal modal-bottom  {{typeShow ? 'show':''}}">
     <view class="pop-box round">
-      <region list="{{typeList}}" bindcascadechange="onTypeChange" region="{{type}}" title="所在行业" bindclose="onClose" level="3"></region>
+      <cascader list="{{typeList}}" bindcascadechange="onTypeChange" value="{{type}}" title="所在行业" bindclose="onClose" level="3"></cascader>
     </view>
   </view>
 </view>

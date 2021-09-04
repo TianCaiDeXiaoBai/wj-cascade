@@ -1,5 +1,5 @@
 // components/region.js
-import areaList from "../utils/area.js"
+ 
 Component({
   /**
    * 组件的属性列表
@@ -7,12 +7,12 @@ Component({
   properties: {
     title: {
       type: String,
-      value: '区域选择'
+      value: '选择'
     },
     // 区域数据列表
-    areaList: {
+    list: {
       type: Array,
-      value: areaList
+      value: []
     },
     // 数据列表里自定义的文字
     allStr: {
@@ -58,7 +58,7 @@ Component({
       area = []
       areaStr = this.data.region
       areaArr = areaStr.split('/')
-      this.data.areaList.forEach(province => {
+      this.data.list.forEach(province => {
         if (province[this.data.labelKey] == areaArr[0]) {
           area.push(province)
           if (areaArr.length > 1) {
@@ -150,7 +150,7 @@ Component({
 
       if (regionShow == false) {
         this.onClose()
-        this.triggerEvent('areachange', {
+        this.triggerEvent('cascadechange', {
           value: this.data.areaStr
         })
       }
@@ -163,7 +163,7 @@ Component({
     },
     onClose() {
       this.triggerEvent('close', {
-        regionShow: false
+        value: false
       })
     }
   }

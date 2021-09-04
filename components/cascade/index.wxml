@@ -14,7 +14,7 @@
   <view class="picker-pannel" style="left: -{{(active)*750}}rpx;">
     <scroll-view scroll-y>
       <view class="picker-item {{area.length > 0 && item[labelKey] == area[0][labelKey] ? 'active' : '' }}"
-        wx:for="{{areaList}}" bindtap="onAreaChange" data-idx="{{'0'}}" data-item="{{item}}">
+        wx:for="{{list}}" bindtap="onAreaChange" data-idx="{{'0'}}" data-item="{{item}}">
         {{item[labelKey]}}</view>
     </scroll-view>
 

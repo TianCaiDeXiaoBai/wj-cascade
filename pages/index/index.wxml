@@ -10,6 +10,12 @@
       <input class="ml20 flex-1" placeholder="请选择" value="{{areaStr2}}" disabled />
       <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
     </view>
+
+    <view class="form-cell align-items" bindtap="onPop" data-show="typeShow">
+      <text>所在行业</text>
+      <input class="ml20 flex-1" placeholder="请选择" value="{{type}}" disabled />
+      <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
+    </view>
   </view>
   <view class="tips">
     <view class="card">
@@ -32,29 +38,29 @@
         <text>title</text>
         <text>标题</text>
         <text>String</text>
-        <text>区域选择</text>
+        <text>选择</text>
       </view>
       <view class="cell align-items">
-        <text>areaList</text>
+        <text>list</text>
         <text>区域数据</text>
         <text>Arrary</text>
-        <text>此demo路径/utils/areaList.js</text>
+        <text>[]</text>
       </view>
       <view class="cell align-items">
         <text>region</text>
-        <text>默认回显的区域值（安徽省/合肥市）</text>
+        <text>默认回显的值（安徽省/合肥市）</text>
         <text>String</text>
         <text>''</text>
       </view>
       <view class="cell align-items">
         <text>labelKey</text>
-        <text>区域数据的对象的key</text>
+        <text>数据的对象的key</text>
         <text>String</text>
         <text>label</text>
       </view>
       <view class="cell align-items">
         <text>childrenKey</text>
-        <text>区域数据的子节点key</text>
+        <text>数据的子节点key</text>
         <text>String</text>
         <text>children</text>
       </view>
@@ -66,7 +72,7 @@
       </view>
       <view class="cell align-items">
         <text>level</text>
-        <text>区域数据层级</text>
+        <text>级联层级</text>
         <text>Number</text>
         <text>2</text>
       </view>
@@ -81,7 +87,7 @@
       </view>
       <view class="cell align-items">
         <text>areachange</text>
-        <text>区域选择改变时的回调</text>
+        <text>选择改变时的回调</text>
         <text>event</text>
       </view>
       <view class="cell align-items">
@@ -93,14 +99,20 @@
   </view>
   <view class="modal modal-bottom  {{regionShow ? 'show':''}}">
     <view class="pop-box round">
-      <region areaList="{{areaList}}" bindareachange="onAreaChange" region="{{region}}" labelKey="name"
+      <region list="{{areaList}}" bindcascadechange="onAreaChange" region="{{region}}" labelKey="name"
         childrenKey="children" bindclose="onClose" level="2" title="所在城市"></region>
     </view>
   </view>
 
   <view class="modal modal-bottom  {{regionShow2 ? 'show':''}}">
     <view class="pop-box round">
-      <region areaList="{{areaList2}}" bindareachange="onAreaChange2" region="{{region2}}" title="需求区域" bindclose="onClose" level="2"></region>
+      <region list="{{areaList2}}" bindcascadechange="onAreaChange2" region="{{region2}}" title="需求区域" bindclose="onClose" level="2"></region>
+    </view>
+  </view>
+
+  <view class="modal modal-bottom  {{typeShow ? 'show':''}}">
+    <view class="pop-box round">
+      <region list="{{typeList}}" bindcascadechange="onTypeChange" region="{{type}}" title="所在行业" bindclose="onClose" level="3"></region>
     </view>
   </view>
 </view>

@@ -6,7 +6,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "区域选择",
+    "navigationBarTitleText": "级联选择",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

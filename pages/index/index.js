@@ -9,7 +9,23 @@ Page({
     areaList,
     areaList2,
     areaStr: '',
-    areaStr2: ''
+    areaStr2: '',
+    type: '',
+    typeList:[{
+      label: "农业",
+      value: "001",
+      children: [{
+        label: "谷物种植",
+        value: '00101',
+        children:[{
+          label: "稻谷种植",
+          value: '0010101',
+        },{
+          label: "小麦种植",
+          value: '0010102',
+        }]
+      }]
+    }]
   },
   onLoad() {
     
@@ -29,10 +45,18 @@ Page({
       areaStr2:value
     })
   },
+  onTypeChange(e){
+    let { value } = e.detail
+    this.setData({
+      typeShow: false,
+      type: value
+    })
+  },
   onClose(){
     this.setData({
       regionShow: false,
-      regionShow2: false
+      regionShow2: false,
+      typeShow: false
     })
   },
   onPop(e){

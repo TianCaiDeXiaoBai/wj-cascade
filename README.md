@@ -14,8 +14,8 @@
 <region list="{{areaList}}" bindcascadechange="onAreaChange" region="{{region}}" labelKey="name" childrenKey="children" bindclose="onClose" level="2" title="所在城市"></region>
 ```
 
-效果:
+### 效果
 <img src="http://m.qpic.cn/psc?/V13eiHFe1CxpVk/TmEUgtj9EK6.7V8ajmQrEAT6GZtUd6RFEDNJ083c4Y1aBiDIMRTGmigZkYDs5j1u6.uzF7fA36l.TV17V5s3mLoXgOPgoGQNHGLDpj1cR1U!/b&bo=wAHAAwAAAAACh6E!&rf=viewer_4.gif" width="375">
-作者微信
 
-<img src="http://m.qpic.cn/psc?/V13eiHFe1CxpVk/TmEUgtj9EK6.7V8ajmQrEEniGxN87*NECA1QieSlYOS195sRoUjKCCUKi3my7Uw0RqVe4w3T4QUnayxT0T*AwE*MvY*QSrE0cOsSL1S*0UQ!/b&bo=rgGuAQAAAAABFzA!&rf=viewer_4.png" width="100"> 
+### 作者微信
+<img src="http://m.qpic.cn/psc?/V13eiHFe1CxpVk/TmEUgtj9EK6.7V8ajmQrEEniGxN87*NECA1QieSlYOS195sRoUjKCCUKi3my7Uw0RqVe4w3T4QUnayxT0T*AwE*MvY*QSrE0cOsSL1S*0UQ!/b&bo=rgGuAQAAAAABFzA!&rf=viewer_4.png" width="375"> 

@@ -67,7 +67,7 @@ Page({
   },
   onCopy() {
     wx.setClipboardData({
-      data: 'https://github.com/TianCaiDeXiaoBai/wj-region',
+      data: 'https://github.com/TianCaiDeXiaoBai/wj-cascade',
     })
   }
 })

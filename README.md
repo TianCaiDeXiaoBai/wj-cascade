@@ -19,4 +19,4 @@
 
 作者微信
 ![微信](http://m.qpic.cn/psc?/V13eiHFe1CxpVk/TmEUgtj9EK6.7V8ajmQrEEniGxN87*NECA1QieSlYOS195sRoUjKCCUKi3my7Uw0RqVe4w3T4QUnayxT0T*AwE*MvY*QSrE0cOsSL1S*0UQ!/b&bo=rgGuAQAAAAABFzA!&rf=viewer_4.png){:width="100px" height="100px"}
-
+<img src="http://m.qpic.cn/psc?/V13eiHFe1CxpVk/TmEUgtj9EK6.7V8ajmQrEEniGxN87*NECA1QieSlYOS195sRoUjKCCUKi3my7Uw0RqVe4w3T4QUnayxT0T*AwE*MvY*QSrE0cOsSL1S*0UQ!/b&bo=rgGuAQAAAAABFzA!&rf=viewer_4.png" width="100"> 

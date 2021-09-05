@@ -5,7 +5,7 @@
       <input class="ml20 flex-1" placeholder="请选择" value="{{areaStr}}" disabled />
       <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
     </view>
-    <view class="form-cell align-items" bindtap="onPop" data-show="regionShow2">
+    <view class="form-cell align-items bb" bindtap="onPop" data-show="regionShow2">
       <text>需求区域</text>
       <input class="ml20 flex-1" placeholder="请选择" value="{{areaStr2}}" disabled />
       <image class="arrow ml20" src="../../imgs/icon_right.png"></image>
@@ -42,7 +42,7 @@
       </view>
       <view class="cell align-items">
         <text>list</text>
-        <text>区域数据</text>
+        <text>数据列表</text>
         <text>Arrary</text>
         <text>[]</text>
       </view>

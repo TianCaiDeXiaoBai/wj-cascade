@@ -59,7 +59,7 @@
 }
 
 .cell {
-  border-bottom: 2rpx solid rgba(240,242,245,0.6);
+  /* border-bottom: 2rpx solid rgba(240,242,245,0.6); */
   font-size: 24rpx;
   padding: 16rpx 0;
 }

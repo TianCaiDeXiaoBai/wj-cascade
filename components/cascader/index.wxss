@@ -712,6 +712,7 @@ page button[type='success'].plain {
   height: 600rpx;
   width: 750rpx;
   display: inline-block;
+  vertical-align: middle;
 }
 .picker-pannel {
   /* overflow: hidden; */

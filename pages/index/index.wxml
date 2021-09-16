@@ -48,7 +48,7 @@
       </view>
       <view class="cell align-items">
         <text>value</text>
-        <text>默认回显的值（安徽省/合肥市）</text>
+        <text>绑定的值</text>
         <text>String</text>
         <text>''</text>
       </view>
